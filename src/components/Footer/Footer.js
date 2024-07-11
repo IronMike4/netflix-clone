@@ -110,10 +110,21 @@ function Footer() {
         'div',
         { className: 'copyright' },
         React.createElement('span', null, '\u00A9'),
-        ' 1997-2024 Mike, Inc'
+        ' 2024 Mike, Inc'
+      )
+    ),
+    // Original Site Link
+    React.createElement(
+      'div',
+      { className: 'original-site' },
+      React.createElement(
+        'a',
+        { href: 'https://www.netflix.com/', target: '_blank', rel: 'noopener noreferrer' },
+        'Original site - https://www.netflix.com/'
       )
     )
   );
 }
+
 
 export default Footer;
