@@ -1,0 +1,114 @@
+/* Header section styling */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  z-index: 999;
+  transition: all 0.5s ease; 
+}
+
+/* Styling for header when scrolled */
+header.black {
+  background-color: #141414;
+}
+
+/* Logo in header */
+.header--logo img {
+  height: 35px;
+  margin-left: 20px;
+}
+
+/* Navigation menu */
+.header--nav {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-start; 
+  margin-left: 20px; 
+}
+
+.header--nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header--nav ul li {
+  margin: 0 15px; 
+}
+
+.header--nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.3s ease; 
+}
+
+.header--nav ul li a:hover {
+  color: #b3b3b3; 
+}
+
+/* User section in header */
+.header--user {
+  margin-left: auto; 
+}
+
+.header--user img {
+  height: 35px;
+  border-radius: 3px;
+}
+
+/* Menu toggle icon for mobile */
+.header--menu-toggle {
+  display: none; 
+  cursor: pointer;
+  font-size: 20px;
+  color: white;
+  margin-left: 50px; 
+}
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+  header {
+      padding: 0 10px; 
+  }
+
+  .header--menu-toggle {
+      display: block; 
+      margin-left: 20px; 
+  }
+
+  .header--nav {
+      position: absolute;
+      top: 70px; 
+      left: 0;
+      width: 100%;
+      background-color: #141414; 
+      display: none; 
+      flex-direction: column;
+      align-items: center;
+      padding: 10px 0;
+  }
+
+  .header--nav.show-menu {
+      display: flex; 
+  }
+
+  .header--nav ul {
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+  }
+
+  .header--nav ul li {
+      margin: 10px 0;
+  }
+}

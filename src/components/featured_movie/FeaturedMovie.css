@@ -1,0 +1,120 @@
+/* Full screen height for featured section */
+.featured {
+    height: 100vh;
+}
+
+/* Vertical gradient overlay */
+.featured--vertical {
+    width: inherit;
+    height: inherit;
+    background: linear-gradient(to top, #111 10%, transparent 90%);
+}
+
+/* Horizontal gradient overlay */
+.featured--horizontal {
+    width: inherit;
+    height: inherit;
+    background: linear-gradient(to right, #111 30%, transparent 70%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 70px 0 150px 30px;
+}
+
+/* Title of the featured content */
+.featured--name {
+    font-size: calc(1em + 4.5vw);
+    font-weight: bold;
+}
+
+/* Additional information */
+.featured--info {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* Points, year, and seasons information */
+.featured--points,
+.featured--year,
+.featured--seasons {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+/* Points styling */
+.featured--points {
+    color: #46d369;
+}
+
+/* Description of the featured content */
+.featured--description {
+    margin-top: 15px;
+    font-size: 1.4em;
+    color: #999;
+    max-width: 35%;
+}
+
+/* Buttons section */
+.featured--buttons {
+    margin-top: 15px;
+}
+
+/* Play button and More Info button styling */
+.featured--playbutton,
+.featured--moreinfobutton {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-right: 10px;
+    transition: all ease-in-out 0.2s;
+}
+
+/* Hover effect on buttons */
+.featured--playbutton:hover,
+.featured--moreinfobutton:hover {
+    opacity: 0.8;
+}
+
+/* Styling for Play button */
+.featured--playbutton {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Styling for More Info button */
+.featured--moreinfobutton {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Genres information */
+.featured--genres {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #999;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 760px) {
+    .featured--info {
+        font-size: 16px;
+    }
+
+    .featured--description {
+        font-size: 0.9em !important;
+        max-width: 60%;
+    }
+
+    .featured--playbutton,
+    .featured--moreinfobutton {
+        font-size: 0.9em;
+    }
+
+    .featured--genres {
+        font-size: 0.8em;
+    }
+}
